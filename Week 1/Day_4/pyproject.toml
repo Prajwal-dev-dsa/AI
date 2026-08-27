@@ -1,0 +1,21 @@
+[project]
+name = "day-4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Prajwal", email = "prajwal77dwivedi@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "groq>=1.7.0",
+    "pydantic>=2.13.4",
+]
+
+[project.scripts]
+day-4 = "day_4:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
