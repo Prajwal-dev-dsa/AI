@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Python is a high-level programming language used for web development, automation, data science, and artificial intelligence.",
+    "is_active": true,
+    "category": "programming"
+  },
+  {
+    "text": "C++ is a general-purpose programming language commonly used for competitive programming, system software, and performance-critical applications.",
+    "is_active": true,
+    "category": "programming"
+  },
+  {
+    "text": "JavaScript is a programming language widely used for building interactive web applications and server-side applications with Node.js.",
+    "is_active": true,
+    "category": "programming"
+  },
+  {
+    "text": "FastAPI is a modern Python web framework for building fast and scalable APIs.",
+    "is_active": true,
+    "category": "backend"
+  },
+  {
+    "text": "Node.js is a JavaScript runtime used to build scalable backend services and APIs.",
+    "is_active": true,
+    "category": "backend"
+  },
+  {
+    "text": "Express.js is a lightweight Node.js framework commonly used for creating REST APIs and backend applications.",
+    "is_active": false,
+    "category": "backend"
+  },
+  {
+    "text": "React is a JavaScript library used to build reusable and interactive user interfaces.",
+    "is_active": true,
+    "category": "frontend"
+  },
+  {
+    "text": "Next.js is a React framework that provides features such as server-side rendering, routing, and full-stack application development.",
+    "is_active": true,
+    "category": "frontend"
+  },
+  {
+    "text": "Tailwind CSS is a utility-first CSS framework used to rapidly build custom user interfaces.",
+    "is_active": true,
+    "category": "frontend"
+  },
+  {
+    "text": "MongoDB is a NoSQL document database that stores data in flexible JSON-like documents.",
+    "is_active": false,
+    "category": "database"
+  },
+  {
+    "text": "PostgreSQL is a powerful open-source relational database known for reliability, SQL support, and advanced querying capabilities.",
+    "is_active": true,
+    "category": "database"
+  },
+  {
+    "text": "Redis is an in-memory data store commonly used for caching, session management, queues, and rate limiting.",
+    "is_active": true,
+    "category": "database"
+  },
+  {
+    "text": "Docker is a containerization platform that allows applications and their dependencies to run consistently across environments.",
+    "is_active": true,
+    "category": "devops"
+  },
+  {
+    "text": "Git is a distributed version control system used to track source code changes and collaborate with other developers.",
+    "is_active": true,
+    "category": "devops"
+  },
+  {
+    "text": "GitHub Actions is a CI/CD platform that can automate testing, building, and deployment workflows.",
+    "is_active": false,
+    "category": "devops"
+  },
+  {
+    "text": "Retrieval-Augmented Generation combines information retrieval with language models to generate answers grounded in external knowledge.",
+    "is_active": true,
+    "category": "ai"
+  },
+  {
+    "text": "Embeddings represent text as numerical vectors so that semantically similar pieces of information can be compared.",
+    "is_active": true,
+    "category": "ai"
+  },
+  {
+    "text": "Reranking improves retrieval quality by taking an initial set of retrieved documents and scoring them again using a more precise model.",
+    "is_active": true,
+    "category": "ai"
+  },
+  {
+    "text": "Machine learning allows systems to learn patterns from data and use those patterns to make predictions or decisions.",
+    "is_active": false,
+    "category": "ai"
+  },
+  {
+    "text": "Qdrant is a vector database designed for storing embeddings and performing similarity search with metadata filtering.",
+    "is_active": true,
+    "category": "vector-db"
+  }
+]
