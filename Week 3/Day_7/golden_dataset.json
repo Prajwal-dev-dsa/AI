@@ -1,0 +1,32 @@
+[
+  {
+    "query": "What is RAG?",
+    "actual_answer": "",
+    "relevant_answer": "RAG is a technique where the system retrieves relevant information from an external knowledge base and gives that evidence to an LLM before generating the answer.",
+    "relevant_context_ids": ["doc_01"]
+  },
+  {
+    "query": "What are the two main phases of a typical RAG pipeline?",
+    "actual_answer": "",
+    "relevant_answer": "The two main phases are indexing and querying. Indexing loads, chunks, embeds, and stores documents; querying embeds the user query, retrieves similar chunks, and sends the retrieved context to the LLM.",
+    "relevant_context_ids": ["doc_02"]
+  },
+  {
+    "query": "How can Qdrant filtering be used with metadata?",
+    "actual_answer": "",
+    "relevant_answer": "Qdrant filtering can restrict retrieval using payload conditions, such as retrieving only points where is_active is true and category equals a specific value.",
+    "relevant_context_ids": ["doc_04", "doc_05"]
+  },
+  {
+    "query": "Why is chunk overlap useful?",
+    "actual_answer": "",
+    "relevant_answer": "Chunk overlap preserves context when an important sentence or concept falls near a chunk boundary, although too much overlap increases redundancy and storage.",
+    "relevant_context_ids": ["doc_08"]
+  },
+  {
+    "query": "Can an answer be correct but still fail faithfulness?",
+    "actual_answer": "",
+    "relevant_answer": "Yes. An answer can be factually correct while still being unfaithful if the retrieved context does not support the claim. Faithfulness checks grounding in the retrieved evidence.",
+    "relevant_context_ids": ["doc_10"]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "doc_01",
+    "text": "Retrieval-Augmented Generation (RAG) is a technique where a system retrieves relevant information from an external knowledge base before asking an LLM to generate an answer. The goal is to ground the response in retrieved evidence instead of relying only on the model's internal knowledge.",
+    "is_active": true,
+    "category": "rag"
+  },
+  {
+    "id": "doc_02",
+    "text": "A typical RAG pipeline has two major phases: indexing and querying. During indexing, source documents are loaded, split into chunks, converted into embeddings, and stored in a vector database. During querying, the user query is embedded, similar chunks are retrieved, and the retrieved context is given to the LLM.",
+    "is_active": true,
+    "category": "rag"
+  },
+  {
+    "id": "doc_03",
+    "text": "Embeddings convert text into numerical vectors that capture semantic meaning. Similar pieces of text tend to have vectors that are close to each other in embedding space. This allows a vector database to perform semantic retrieval rather than relying only on exact keyword matches.",
+    "is_active": true,
+    "category": "embeddings"
+  },
+  {
+    "id": "doc_04",
+    "text": "Qdrant is a vector database designed for similarity search and retrieval of high-dimensional vectors. A Qdrant collection stores vectors together with payload data. Payload fields can contain metadata such as category, source, document ID, or an active/inactive flag.",
+    "is_active": true,
+    "category": "qdrant"
+  },
+  {
+    "id": "doc_05",
+    "text": "Filtering in Qdrant lets a retrieval query restrict results using payload conditions. For example, a system can retrieve only points where is_active is true and category is equal to 'backend'. Metadata filtering is useful when semantic similarity alone is not enough to define the allowed search space.",
+    "is_active": true,
+    "category": "qdrant"
+  },
+  {
+    "id": "doc_06",
+    "text": "HNSW (Hierarchical Navigable Small World) is a graph-based approximate nearest neighbor algorithm commonly used for fast vector search. It organizes vectors in a navigable graph so that nearest-neighbor candidates can be found efficiently without exhaustively comparing the query against every vector.",
+    "is_active": true,
+    "category": "vector_search"
+  },
+  {
+    "id": "doc_07",
+    "text": "Chunking breaks large documents into smaller pieces before embedding. Fixed-size chunking uses a predefined character or token size. Paragraph-based chunking follows paragraph boundaries. Recursive chunking tries multiple separators, such as headings, paragraphs, lines, and spaces, to create chunks while preserving useful structure.",
+    "is_active": true,
+    "category": "chunking"
+  },
+  {
+    "id": "doc_08",
+    "text": "Chunk overlap means that neighboring chunks share some content. Overlap helps preserve context when an important sentence or concept lies near a chunk boundary. Too much overlap, however, increases storage and retrieval redundancy.",
+    "is_active": true,
+    "category": "chunking"
+  },
+  {
+    "id": "doc_09",
+    "text": "Top-k retrieval means returning the k highest-scoring candidates for a query. A smaller k can reduce irrelevant context and prompt size, while a larger k can improve recall at the cost of more noise and more tokens sent to the LLM.",
+    "is_active": true,
+    "category": "retrieval"
+  },
+  {
+    "id": "doc_10",
+    "text": "Faithfulness evaluates whether the generated answer is supported by the retrieved context. An answer can be fluent but unfaithful if it introduces facts that are not present in the provided evidence. Correctness evaluates whether the answer is factually right, while relevancy checks whether it directly addresses the user's question.",
+    "is_active": true,
+    "category": "rag_evaluation"
+  }
+]
